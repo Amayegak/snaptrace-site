@@ -1,5 +1,7 @@
 # SnapTrace
 
+![SnapTrace icon](images/snaptrace_icon_512.png)
+
 ## 目次
 - [インストール（現状、テスターのみインストール可能）](https://play.google.com/store/apps/details?id=com.snaptrace)
 - [アプリ概要](docs/app-overview.md)
