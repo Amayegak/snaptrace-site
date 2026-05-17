@@ -1,6 +1,6 @@
 # アプリ概要
 
-![Screenshot](https://amayegak.github.io/snaptrace-site/images/screenshot_normal_270x600.png)
+![SnapTrace icon](https://amayegak.github.io/snaptrace-site/images/snaptrace_icon_250.png)
 
 ## SnapTraceとは
 

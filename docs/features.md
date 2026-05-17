@@ -1,5 +1,7 @@
 # 機能仕様
 
+![Screenshot](https://amayegak.github.io/snaptrace-site/images/screenshot_normal_270x600.png)
+
 ## 静止画撮影
 
 - スナップ動画のバッファリング中の静止画撮影指示を受け付ける
