@@ -1,5 +1,7 @@
 # アプリ概要
 
+![Screenshot](https://amayegak.github.io/snaptrace-site/images/screenshot_normal_270x600.png)
+
 ## SnapTraceとは
 
 SnapTraceは、カメラアプリです。静止画撮影を行うたびに、その撮影直前の動画（スナップ動画）を記録します。一日分のスナップ動画を繋ぎ合わせ合成し、一日のダイジェスト動画（SnapTrace動画）を作成することができます。

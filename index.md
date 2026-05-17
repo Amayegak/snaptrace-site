@@ -1,6 +1,6 @@
 # SnapTrace
 
-![SnapTrace icon](https://amayegak.github.io/snaptrace-site/images/snaptrace_icon_512.png)
+![SnapTrace icon](https://amayegak.github.io/snaptrace-site/images/snaptrace_icon_250.png)
 
 ## 目次
 - [インストール（現状、テスターのみインストール可能）](https://play.google.com/store/apps/details?id=com.snaptrace)
