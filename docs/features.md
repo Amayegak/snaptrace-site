@@ -4,6 +4,8 @@
 
 ## 静止画撮影
 
+![ShotButton](https://amayegak.github.io/snaptrace-site/images/shot_button_60.png)
+
 - スナップ動画のバッファリング中の静止画撮影指示を受け付ける
 - 通常動画記録中の静止画撮影指示を受け付ける
 - 静止画撮影はデバイスの最大画素サイズ固定
@@ -26,6 +28,8 @@
 
 ### 縦動画の処理
 
+![VerticalImage](https://amayegak.github.io/snaptrace-site/images/vertical_image.png)
+
 - 縦動画（1080×1920）は、横動画サイズ（1920×1080）の左右の中心位置に回転せず配置
 - 左右を黒く塗りつぶした映像とする
 - **目的**: 繋ぎ合わせ合成時の動画フォーマット変換等を不要とするため
@@ -36,6 +40,15 @@
 #### 基本の振る舞い
 
 - スナップ動画は、フロント/リアカメラ切り替え・デバイス縦横姿勢変更・動画記録停止時にバッファリングを停止し、再び新しいカメラ・姿勢でバッファリングを開始する
+
+#### ユーザー操作
+
+![BufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_button_125.png)
+![StartBufferingButton](https://amayegak.github.io/snaptrace-site/images/start_buffering_button_125.png)
+
+- "Buffering"ボタンが押されると、スナップ動画のバッファリングを停止する
+- バッファリングが停止すると、ボタン文字列を"Start Buffering"に変更する（色も変える）
+- "Start Buffering"ボタンが押されると、バッファリングを再開する
 
 #### スナップ動画記録中
 
@@ -48,11 +61,27 @@ SnapTraceアプリ起動中、静止画はいつでも撮らせる
 - 静止画撮影が終了したときをスナップ動画記録の終了点とすることは先に述べた
 - 静止画撮影中にデバイス縦位置・横位置姿勢変更が発生した場合、非常に短いスナップ動画が残るか、スナップ動画が残らない可能性がある
 
+#### スナップ動画バッファリングのプログレスバーの表示
+
+- 表示内容
+  - スナップ動画のバッファリング中、プログレスバーを表示する
+  - 次の記録時に保存されるスナップ動画のバッファリング量を示す
+  - 4秒のバッファリングを100%として表示する
+
+- リセット条件
+  - プログレスバーは以下のときにリセットする：
+    - スナップ動画保存時
+    - ロントカメラ・リアカメラ切り替え、デバイス縦位置・横位置姿勢変更、通常動画記録停止に伴うバッファリング停止・再開時
+
 ## 通常動画記録
+
+![RecStartButton](https://amayegak.github.io/snaptrace-site/images/recstart_button_60.png)
+![RecStartButton](https://amayegak.github.io/snaptrace-site/images/recstop_button_60.png)
 
 スナップ動画とは別に、通常動画を記録することができる
 - デバイス縦姿勢で通常動画記録開始したとき、縦動画を記録する
 - デバイス横姿勢で通常動画記録開始したとき、横動画を記録する
+- 通常動画記録中、記録時間を表示する
 - 通常動画記録を開始しても、スナップ動画のバッファリングは継続する
 - 通常動画記録中の静止画撮影は受け付ける
 - 通常動画記録中に静止画撮影が行われたとき、通常動画とは別のスナップ動画の記録も行う
@@ -69,23 +98,9 @@ SnapTraceアプリ起動中、静止画はいつでも撮らせる
 - **動画解像度**: FHD固定（1920×1080）
   - 通常動画、スナップ動画いずれも適用
 
-## スナップ動画バッファリングのプログレスバーの表示
-
-### 表示内容
-
-- スナップ動画のバッファリング中、プログレスバーを表示する
-- 次の記録時に保存されるスナップ動画のバッファリング量を示す
-- 4秒のバッファリングを100%として表示する
-
-### リセット条件
-
-プログレスバーは以下のときにリセットする：
-
-- スナップ動画保存時
-- フロントカメラ・リアカメラ切り替え、デバイス縦位置・横位置姿勢変更、通常動画記録停止に伴うバッファリング停止・再開時
-
-
 ## SnapTrace動画（一日のダイジェスト動画）作成
+
+![CreateSnapTraceMovieButton](https://amayegak.github.io/snaptrace-site/images/create_snaptrace_movie_button_125.png)
 
 ### "Create SnapTrace Movie"ボタンでSnapTrace動画作成を開始する
 
@@ -102,7 +117,9 @@ SnapTraceアプリ起動中、静止画はいつでも撮らせる
 
 ### SnapTrace動画作成中の操作
 
-- SnapTrace動画作成中は、"Create SnapTrace Movie"ボタンは色を変更し"Processing..."と表示し、押下（タッチ）を受け付けない
+![ProcessingIcon](https://amayegak.github.io/snaptrace-site/images/processing_button_500.png)
+
+- SnapTrace動画作成中は、"Create SnapTrace Movie"ボタンは色を変更し"Processing"と表示し、押下（タッチ）を受け付けない
   - 理由：SnapTrace動画作成処理の多重化回避
 - 静止画撮影、通常動画記録操作は受け付ける
 - 画像ビューワアプリ起動ボタンは受け付けない
@@ -124,6 +141,8 @@ SnapTraceアプリ起動中、静止画はいつでも撮らせる
 
 ## 露出補正
 
+![ExpComp](https://amayegak.github.io/snaptrace-site/images/exposure_compensation_button.png)
+
 - デバイス縦姿勢時の画面右下に露出補正操作部を備える
 - 初期状態で下向き三角の下にある円は、適正露出指示ボタンである
 - 下向き三角は露出指示アイコンである
@@ -141,7 +160,15 @@ SnapTraceアプリ起動中、静止画はいつでも撮らせる
 - ピンチイン/ピンチアウト操作を受けズームイン/ズームアウトする機能を備える
 - ズームは、プレビュー画面、静止画、スナップ動画、通常動画に反映する
 
+## カメラ切り替え
+
+![FlipCamera](https://amayegak.github.io/snaptrace-site/images/flip_camera.png)
+
+- フロントカメラ/リアカメラ切り替え機能を備える
+
 ## 画像ビューワアプリ起動
+
+![ExpComp](https://amayegak.github.io/snaptrace-site/images/image_icon_36.png)
 
 - デバイス縦姿勢時の画面左下に画像ビューワアプリ起動操作部を備える
 - 初回操作時は、デバイスにインストールされている画像ビューワアプリの選択画面を表示する
