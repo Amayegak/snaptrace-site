@@ -1,4 +1,4 @@
-# 機能仕様
+# カメラモード機能仕様
 
 ![Screenshot](https://amayegak.github.io/snaptrace-site/images/screenshot_normal_270x600.png)
 
