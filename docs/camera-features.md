@@ -164,10 +164,6 @@
 
 - 過去のスナップ動画で未合成のものがあれば、その日のSnapTrace動画を合成する
 
-### SnapTrace動画編集モード画面への遷移
-
-- "Create SnapTrace Movie"ボタン長押しで、SnapTrace動画編集モード画面へ遷移する
-
 ## 露出補正
 
 ![ExpComp](https://amayegak.github.io/snaptrace-site/images/exposure_compensation_button.png)
