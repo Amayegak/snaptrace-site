@@ -1,6 +1,6 @@
 # カメラモード機能仕様
 
-![Screenshot](https://amayegak.github.io/snaptrace-site/images/screenshot_normal_270x600.png)
+![CameraView](https://amayegak.github.io/snaptrace-site/images/Camera01.png)
 
 ## 静止画撮影
 
