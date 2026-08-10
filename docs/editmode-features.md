@@ -1,6 +1,6 @@
 # SnapTrace動画編集モード機能仕様
 
-## SnapTrace動画編集画面の入り方
+## SnapTrace動画編集モード画面の入り方
 
 ![edit01](https://amayegak.github.io/snaptrace-site/images/Edit01.png)
 - "Create SnapTrace Movie"ボタン長押しでSnapTrace動画編集画面に入る
