@@ -49,12 +49,12 @@
 
 #### ユーザー操作
 
-![BufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_button_125.png)
-![StartBufferingButton](https://amayegak.github.io/snaptrace-site/images/start_buffering_button_125.png)
+![BufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_off_image_button_125.png)
+![StartBufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_off_image_button_125.png)
 
-- "Buffering"ボタンが押されると、スナップ動画のバッファリングを停止する
-- バッファリングが停止すると、ボタン文字列を"Start Buffering"に変更する（色も変える）
-- "Start Buffering"ボタンが押されると、バッファリングを再開する
+- "Buffering ON"状態を示すボタンが押されると、スナップ動画のバッファリングを停止する
+- バッファリングが停止すると、"Buffering OFF"状態を示すボタンに変更する
+- Buffering OFF"状態を示すボタンが押されると、バッファリングを再開する
 
 #### スナップ動画記録中
 
@@ -124,7 +124,7 @@
 
 ## SnapTrace動画（一日のダイジェスト動画）作成
 
-![CreateSnapTraceMovieButton](https://amayegak.github.io/snaptrace-site/images/create_snaptrace_movie_button_125.png)
+![CreateSnapTraceMovieButton](https://amayegak.github.io/snaptrace-site/images/create_snaptrace_movie_image_button_125.png)
 
 ### "Create SnapTrace Movie"ボタンでSnapTrace動画作成を開始する
 
@@ -189,6 +189,24 @@
 - ピンチイン/ピンチアウト操作を受けズームイン/ズームアウトする機能を備える
 - ズームは、プレビュー画面、静止画、スナップ動画、通常動画に反映する
 
+## トーチライトボタン
+
+![Torchlight](https://amayegak.github.io/snaptrace-site/images/torchlight_on_button.png)
+
+- トーチライト消灯中を示し、押されるとトーチライトを点灯する
+
+![Torchlight](https://amayegak.github.io/snaptrace-site/images/torchlight_off_button.png)
+
+- トーチライト点灯状態を示し、押されるとトーチライトを消灯する
+  - トーチライト点灯状態でデバイス縦横姿勢変更・動画記録開始/停止が行われると、トーチライトを一旦消して再点灯する
+  - トーチライト点灯状態で動画編集モード画面に遷移すると消灯する
+    - 再びカメラモードに戻ると点灯する
+  - トーチライト点灯状態でトーチライトを備えないカメラに切り替えると消灯する
+    - 再びトーチライトを備えるカメラに切り替えると点灯する
+- **トーチライトを備えないカメラでは点灯しない**
+  - 点灯しないが"点灯状態"となる
+  - トーチライトを備えるカメラに切り替えると点灯する
+
 ## カメラ切り替え
 
 ![FlipCamera](https://amayegak.github.io/snaptrace-site/images/flip_camera.png)
@@ -199,7 +217,7 @@
 
 ## 画像ビューワアプリ起動
 
-![ExpComp](https://amayegak.github.io/snaptrace-site/images/image_icon_36.png)
+![ImageViewerApp](https://amayegak.github.io/snaptrace-site/images/image_viewer_app.png)
 
 - デバイス縦姿勢時の画面左下に画像ビューワアプリ起動操作部を備える
 - 初回操作時は、デバイスにインストールされている画像ビューワアプリの選択画面を表示する
