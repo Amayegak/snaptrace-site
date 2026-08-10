@@ -49,7 +49,7 @@
 
 #### ユーザー操作
 
-![BufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_off_image_button_125.png)
+![BufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_on_image_button_125.png)
 ![StartBufferingButton](https://amayegak.github.io/snaptrace-site/images/buffering_off_image_button_125.png)
 
 - "Buffering ON"状態を示すボタンが押されると、スナップ動画のバッファリングを停止する
